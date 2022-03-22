@@ -8,46 +8,8 @@
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
 </head>
 <body>
-    <nav id="top_navbar">
-        <div class="container">
-            <div class="nav-wrapper d-flex d-justify-between d-align-center">
-                <div class="brand-name">
-                    <h1><a href="#">DEV COURSES</a></h1>
-                </div>
-                <button class="d-sm-grid nav-btn-mobile" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="navbar d-sm-none d-flex">
-                    <li><a href="#">link 1</a></li>
-                    <li><a href="#">link 2</a></li>
-                    <li><a href="#">link 3</a></li>
-                    <li><a href="#">link 4</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header>
-        <div class="container">
-            <div class="wrapper d-flex d-justify-between d-align-center">
-                <div>
-                    <h2>
-                        Welcome <br> to
-                        Dev courses
-                    </h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eligendi impedit veritatis, at ipsa tenetur! Distinctio, vel tempora. Quaerat, exercitationem?</p>
-                    <button type="button" class="btn-action" id="header_btn_action">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg>
-                    </button>
-                </div>
-                <div>
-                    <img src="{{asset("images/banner_img.png")}}" alt="header image">
-                </div>
-            </div>
-        </div>
-    </header>
+    @include("layouts.navbar")
+    @include("layouts.header")
 
     <section class="sec-1">
         <div class="container">
@@ -171,35 +133,7 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="wrapper d-grid">
-                <div class="col-4 site-info">
-                    <h3>About us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint possimus aspernatur harum nihil! Dolore, odio!</p>
-                </div>
-                <div class="col-4 footer-nav">
-                    <h3>footer nav 1</h3>
-                    <ul>
-                        <li><a href="#">link 1</a></li>
-                        <li><a href="#">link 2</a></li>
-                        <li><a href="#">link 3</a></li>
-                    </ul>
-                </div>
-                <div class="col-4 footer-nav">
-                    <h3>footer nav 2</h3>
-                    <ul>
-                        <li><a href="#">link 1</a></li>
-                        <li><a href="#">link 2</a></li>
-                        <li><a href="#">link 3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>All rights reserved.© 2022. developed ❤️ by <a href="https://github.com/waelalhassan" target="_blank">Wael Alhassan</a></p>
-            </div>
-        </div>
-    </footer>
+    @include("layouts.footer")
     <script src="{{asset("js/app.js")}}"></script>
 </body>
 </html>
