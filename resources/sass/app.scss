@@ -24,6 +24,18 @@ nav {
                 }
             }
         }
+        .nav-btn-mobile {
+            background-color: transparent;
+            width: 35px;
+            height: 28px;
+            display: none;
+            span {
+                display: block;
+                background-color: #FFF;
+                width: 100%;
+                height: 2.5px;
+            }
+        }
         .navbar {
             li {
                 a {
@@ -34,15 +46,39 @@ nav {
             }
         }
     }
+    transition: all .3s ease;
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 255, 255, .3);
+        backdrop-filter: blur(5px);
+        border-bottom:1px solid $borderColor;
+        animation: top_navbar .3s linear forwards;
+        .navbar {
+            li {
+                a {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
 }
+
+@keyframes top_navbar {
+    from {transform: translateY(-100%);}
+    to {transform: translateY(0);}
+}
+
 
 header {
     background-color: $mainColor;
     .wrapper {
-        height: 85vh;
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
         h2 {
             font-size: 3rem;
-            margin-bottom: 2rem;
+            margin-bottom: 20px;
             color: #FFF;
         }
         p {
@@ -53,12 +89,27 @@ header {
             width: 500px;
             max-width: 100%;
         }
+        .btn-action {
+            margin-top: 20px;
+            background-color: transparent;
+            svg {
+                width: 50px;
+                fill: #FFF;
+                animation: btb_action_svg .5s infinite alternate-reverse ease;
+            }
+        }
     }
+}
+
+@keyframes btb_action_svg {
+    from {transform: translateY(-10px);}
+    to {transform: translateY(10px);}
 }
 
 .sec-1 {
     padding: 50px 0;
     .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
         h2 {
             display: inline-block;
             border-bottom: 3px solid $mainColor;
@@ -88,7 +139,7 @@ header {
         .sec-2-item {
             background-color: #FFF;
             color: #757575;
-            padding: 10px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, .3);
             .sec-2-icon {

@@ -401,6 +401,9 @@ width
 }
 
 @media (max-width: 767.98px) {
+  .d-sm-none {
+    display: none;
+  }
   .d-sm-flex {
     display: flex;
   }

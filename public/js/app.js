@@ -7,7 +7,25 @@
   \*****************************/
 /***/ (() => {
 
+// make navbar fixed when scroll
+var top_navbar = document.querySelector("#top_navbar");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 200) {
+    top_navbar.classList.add("fixed");
+  } else {
+    top_navbar.classList.remove("fixed");
+  }
+}); // scroll when click on header action btn
 
+var header_btn_action = document.querySelector("#header_btn_action");
+
+header_btn_action.onclick = function () {
+  scrollTo({
+    top: document.querySelector("#sec_3").getBoundingClientRect().top - 100,
+    left: 0,
+    behavior: "smooth"
+  });
+};
 
 /***/ }),
 
