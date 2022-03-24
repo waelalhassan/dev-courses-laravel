@@ -1,3 +1,5 @@
+const Log = require("laravel-mix/src/Log");
+
 // make navbar fixed when scroll
 const top_navbar = document.querySelector("#top_navbar");
 window.addEventListener("scroll", () => {
@@ -17,4 +19,10 @@ header_btn_action.onclick = ()=> {
         left:0,
         behavior: "smooth"
     })
+}
+
+// fix grid for first item
+const courses_parent = document.querySelector("#courses_parent");
+if (courses_parent.children.length == 1) {
+    courses_parent.children[0].style.width = "350px";
 }

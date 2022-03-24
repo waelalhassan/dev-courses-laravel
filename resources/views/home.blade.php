@@ -102,7 +102,7 @@
                     <li>filter 5</li>
                 </ul>
             </div>
-            <div class="wrapper d-grid">
+            <div class="wrapper d-grid" id="courses_parent">
                 <div class="sec-3-card">
                     <header>
                         <img src="{{asset("images/course.png")}}" alt="image">
