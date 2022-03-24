@@ -26,3 +26,9 @@ const courses_parent = document.querySelector("#courses_parent");
 if (courses_parent.children.length == 1) {
     courses_parent.children[0].style.width = "350px";
 }
+
+(async () => {
+    const api = await fetch("http://127.0.0.1:8000/api/courses");
+    const response = await api.json();
+    console.log(response);
+})();

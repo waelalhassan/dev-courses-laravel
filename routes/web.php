@@ -9,11 +9,9 @@ Route::get('/', function () {
 
 Route::controller(CoursesController::class)->group(function () {
     Route::get("/", "index");
+    Route::get("/course/{id}", "show")->name("course.show");
 });
 
-// Route::controller(CategoriesController::class)->group(function () {
-//     Route::get("/", "index");
-// });
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

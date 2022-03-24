@@ -126,7 +126,7 @@
                                 <div class="card-btns d-flex d-justify-between d-align-center">
                                     <a href="{{$course["buy_link"]}}" target="_blank">Buy now</a>
 
-                                    <a href="{{$course["id"]}}">Details</a>
+                                    <a href="{{route("course.show", $course["id"])}}">Details</a>
                                 </div>
                                 <div class="card-info d-flex d-justify-between d-align-center">
                                     <span>
