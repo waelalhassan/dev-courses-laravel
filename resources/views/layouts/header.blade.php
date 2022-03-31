@@ -1,4 +1,4 @@
-<header>
+<header class="main-header">
     <div class="container">
         <div class="wrapper d-flex d-justify-between d-align-center">
             <div>

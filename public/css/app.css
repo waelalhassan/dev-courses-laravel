@@ -12,13 +12,16 @@ body {
     font-family: sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 a {
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
 }
 
@@ -636,10 +639,9 @@ nav {
 nav .nav-wrapper {
   height: 65px;
 }
-nav .nav-wrapper .brand-name h1 {
+nav .nav-wrapper .brand-name a {
+  font-weight: bold;
   font-size: 1.3rem;
-}
-nav .nav-wrapper .brand-name h1 a {
   color: #FFF;
 }
 nav .nav-wrapper .nav-btn-mobile {
@@ -661,6 +663,8 @@ nav .nav-wrapper .navbar li a {
 }
 nav.fixed {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(5px);
@@ -690,32 +694,32 @@ nav.fixed .navbar li a {
     transform: translateY(0);
   }
 }
-header {
+.main-header {
   background-color: #eb4034;
 }
-header .wrapper {
+.main-header .wrapper {
   min-height: 90vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
 }
-header .wrapper h2 {
+.main-header .wrapper h2 {
   font-size: 3rem;
   margin-bottom: 20px;
   color: #FFF;
 }
-header .wrapper p {
+.main-header .wrapper p {
   color: #FFF;
   font-size: 1.3rem;
 }
-header .wrapper img {
+.main-header .wrapper img {
   width: 500px;
   max-width: 100%;
 }
-header .wrapper .btn-action {
+.main-header .wrapper .btn-action {
   margin-top: 20px;
   background-color: transparent;
 }
-header .wrapper .btn-action svg {
+.main-header .wrapper .btn-action svg {
   width: 50px;
   fill: #FFF;
   animation: btb_action_svg 0.5s infinite alternate-reverse ease;
@@ -806,10 +810,13 @@ header .wrapper .btn-action svg {
   color: #FFF;
 }
 .sec-3 .wrapper {
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  gap: 40px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .sec-3 .wrapper .sec-3-card {
+  width: 370px;
   box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.2);
 }
 .sec-3 .wrapper .sec-3-card header {
@@ -859,6 +866,66 @@ header .wrapper .btn-action svg {
 }
 .sec-3 .wrapper .sec-3-card .sec-3-footer .card-info span i {
   color: #757575;
+}
+
+.single-course .wrapper-single-course {
+  background-color: #fafafa;
+  padding: 0 20px;
+  margin: 30px 0;
+}
+.single-course .wrapper-single-course header {
+  padding: 7px 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #cfcfcf;
+}
+.single-course .wrapper-single-course header h1 {
+  color: #eb4034;
+  font-size: 2rem;
+}
+.single-course .wrapper-single-course .single-course-info {
+  min-width: 370px;
+}
+.single-course .wrapper-single-course .single-course-info img {
+  width: 100%;
+}
+.single-course .wrapper-single-course .single-course-info a {
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+  background-color: #eb4034;
+  color: #FFF;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.single-course .wrapper-single-course .single-course-info a:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ed5f55;
+}
+.single-course .wrapper-single-course .single-course-details {
+  padding: 0 50px;
+  color: #666666;
+}
+.single-course .wrapper-single-course .single-course-details h1,
+.single-course .wrapper-single-course .single-course-details h2,
+.single-course .wrapper-single-course .single-course-details h3,
+.single-course .wrapper-single-course .single-course-details h4,
+.single-course .wrapper-single-course .single-course-details h5,
+.single-course .wrapper-single-course .single-course-details h6 {
+  margin-bottom: 15px;
+}
+.single-course .wrapper-single-course .single-course-details p {
+  padding-bottom: 10px;
+}
+.single-course .wrapper-single-course .single-course-details img {
+  width: 100%;
+  margin: 0 auto;
+}
+.single-course .wrapper-single-course .single-course-details ul, .single-course .wrapper-single-course .single-course-details ol {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.single-course .wrapper-single-course .single-course-details a {
+  color: #eb4034;
 }
 
 footer {

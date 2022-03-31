@@ -2,7 +2,7 @@
     <div class="container">
         <div class="nav-wrapper d-flex d-justify-between d-align-center">
             <div class="brand-name">
-                <h1><a href="/">DEV COURSES</a></h1>
+                <a href="/">DEV COURSES</a>
             </div>
             <button class="d-sm-grid nav-btn-mobile" type="button">
                 <span></span>

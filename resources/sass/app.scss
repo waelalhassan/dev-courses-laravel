@@ -17,11 +17,10 @@ nav {
     .nav-wrapper {
         height: 65px;
         .brand-name {
-            h1 {
+            a {
+                font-weight: bold;
                 font-size: 1.3rem;
-                a {
-                    color: #FFF;
-                }
+                color: #FFF;
             }
         }
         .nav-btn-mobile {
@@ -49,6 +48,8 @@ nav {
     transition: all .3s ease;
     &.fixed {
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         background-color: rgba(255, 255, 255, .3);
         backdrop-filter: blur(5px);
@@ -70,7 +71,7 @@ nav {
 }
 
 
-header {
+.main-header {
     background-color: $mainColor;
     .wrapper {
         min-height: 90vh;
@@ -184,9 +185,12 @@ header {
         }
     }
     .wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-        gap: 40px;
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         .sec-3-card {
+            width: 370px;
             box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, .2);
             header {
                 background-color: #FFF;
@@ -240,6 +244,75 @@ header {
         }
     }
 }
+
+.single-course {
+    .wrapper-single-course {
+        background-color: #fafafa;
+        padding: 0 20px;
+        margin: 30px 0;
+        header {
+            padding: 7px 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $borderColor;
+            h1 {
+                color: $mainColor;
+                font-size: 2rem;
+            }
+        }
+        .single-course-info {
+            min-width: 370px;
+            img {
+                width: 100%;
+            }
+            a {
+                text-transform: uppercase;
+                padding: 5px;
+                text-align: center;
+                background-color: $mainColor;
+                color: #FFF;
+                width: 100%;
+                transition: all .3s ease;
+                img {
+
+                }
+                span {
+
+                }
+                &:hover {
+                    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+                    background-color: $color1;
+                }
+            }
+        }
+        .single-course-details {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin-bottom: 15px;
+            }
+            p {
+                padding-bottom: 10px;
+            }
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+            ul, ol {
+                padding-left: 20px;
+                margin-bottom: 10px;
+            }
+            a {
+                color: $mainColor;
+            }
+            padding: 0 50px;
+            color: #666666;
+        }
+    }
+}
+
 
 footer {
     padding: 50px 0 0 0;

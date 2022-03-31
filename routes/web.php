@@ -12,7 +12,6 @@ Route::controller(CoursesController::class)->group(function () {
     Route::get("/course/{id}", "show")->name("course.show");
 });
 
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
