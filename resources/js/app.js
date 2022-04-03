@@ -116,3 +116,35 @@ if (header_btn_action) {
 function max_number_letters(string) {
     return string.substr(0, 120) + "...";
 }
+
+/**
+ *
+ * create animations & transitions
+ *
+ */
+
+const titles = document.querySelectorAll(".hide-this");
+const obs = new IntersectionObserver((a) => {
+    a.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add("show-this")
+            obs.unobserve(e.target)
+        }
+    })
+}, {threshold: 1, rootMargin: "20px"})
+titles.forEach(e => obs.observe(e))
+
+/**
+ *
+ * text effect
+ *
+ */
+
+// const text_effect = document.querySelector("#text_effect");
+// const test_length = text_effect.textContent.length
+// let incre_num = 0;
+
+// setInterval(() => {
+//     incre_num++
+//     console.log(incre_num)
+// }, 500)

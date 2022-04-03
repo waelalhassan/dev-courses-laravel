@@ -13,7 +13,7 @@
 
     <section class="sec-1">
         <div class="container">
-            <div class="wrapper d-grid">
+            <div class="hide-this wrapper d-grid">
                 <div>
                     <h2>{{setting('site.sec_1_title')}}</h2>
                     {!! setting('site.sec_1_desc') !!}
@@ -27,12 +27,12 @@
 
     <section class="sec-2">
         <div class="container">
-            <h2>{{setting('site.sec_2_title')}}</h2>
+            <h2 class="hide-this">{{setting('site.sec_2_title')}}</h2>
             <div class="wrapper d-grid">
                 @if (count($offers) > 0)
                     @foreach ($offers as $offer)
 
-                    <div class="sec-2-item d-flex d-align-center d-justify-between">
+                    <div class="hide-this sec-2-item d-flex d-align-center d-justify-between">
                         <div class="sec-2-icon">
                             <img src="{{asset("storage/".$offer["image"])}}" alt="icon">
                         </div>
@@ -51,7 +51,7 @@
     <section class="sec-3" id="sec_3">
         <div class="container">
             <div class="sec-3-header d-sm-flex-column d-flex d-justify-between d-align-center">
-                <h2>{{setting('site.sec_3_title')}}</h2>
+                <h2 class="hide-this">{{setting('site.sec_3_title')}}</h2>
                 <ul class="filter d-flex" id="categories_parent">
                 </ul>
             </div>

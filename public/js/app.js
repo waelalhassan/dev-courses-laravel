@@ -149,6 +149,40 @@ _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MOD
 function max_number_letters(string) {
   return string.substr(0, 120) + "...";
 }
+/**
+ *
+ * create animations & transitions
+ *
+ */
+
+
+var titles = document.querySelectorAll(".hide-this");
+var obs = new IntersectionObserver(function (a) {
+  a.forEach(function (e) {
+    if (e.isIntersecting) {
+      e.target.classList.add("show-this");
+      obs.unobserve(e.target);
+    }
+  });
+}, {
+  threshold: 1,
+  rootMargin: "20px"
+});
+titles.forEach(function (e) {
+  return obs.observe(e);
+});
+/**
+ *
+ * text effect
+ *
+ */
+// const text_effect = document.querySelector("#text_effect");
+// const test_length = text_effect.textContent.length
+// let incre_num = 0;
+// setInterval(() => {
+//     incre_num++
+//     console.log(incre_num)
+// }, 500)
 
 /***/ }),
 

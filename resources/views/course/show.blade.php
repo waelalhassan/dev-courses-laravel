@@ -15,7 +15,7 @@
 
     <section class="single-course">
         <div class="container">
-            <div class="wrapper-single-course">
+            <div class="hide-this wrapper-single-course">
                 <header class="text-center">
                     <h1>{{ $course['title'] }}</h1>
                 </header>

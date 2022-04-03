@@ -11,6 +11,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.hide-this {
+    opacity: 0;
+    transition: all .5s linear;
+}
+.hide-this.show-this {
+    opacity: 1;
+}
+
 nav {
     border-bottom:1px solid $color3;
     background-color: $mainColor;
@@ -85,7 +93,7 @@ nav {
         }
         p {
             color: #FFF;
-            font-size: 1.3rem;
+            font-size: 18px;
         }
         img {
             width: 500px;
@@ -95,7 +103,7 @@ nav {
             margin-top: 20px;
             background-color: transparent;
             svg {
-                width: 50px;
+                width: 30px;
                 fill: #FFF;
                 animation: btb_action_svg .5s infinite alternate-reverse ease;
             }
@@ -360,3 +368,5 @@ footer {
         }
     }
 }
+
+

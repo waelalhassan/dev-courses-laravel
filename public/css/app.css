@@ -631,6 +631,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.hide-this {
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.hide-this.show-this {
+  opacity: 1;
+}
+
 nav {
   border-bottom: 1px solid #ed9993;
   background-color: #eb4034;
@@ -712,7 +721,7 @@ nav.fixed .navbar li a {
 }
 .main-header .wrapper p {
   color: #FFF;
-  font-size: 1.3rem;
+  font-size: 18px;
 }
 .main-header .wrapper img {
   width: 500px;
@@ -723,7 +732,7 @@ nav.fixed .navbar li a {
   background-color: transparent;
 }
 .main-header .wrapper .btn-action svg {
-  width: 50px;
+  width: 30px;
   fill: #FFF;
   animation: btb_action_svg 0.5s infinite alternate-reverse ease;
 }

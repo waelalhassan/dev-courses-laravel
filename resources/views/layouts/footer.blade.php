@@ -1,6 +1,6 @@
 <footer>
     <div class="container">
-        <div class="wrapper d-grid">
+        <div class="hide-this wrapper d-grid">
             <div class="col-4 site-info">
                 <h3>About us</h3>
                 <p>{{setting('site.description')}}</p>
@@ -22,7 +22,7 @@
                 </ul>
             </div>
         </div>
-        <div class="copyright">
+        <div class="hide-this copyright">
             <p>All rights reserved.© 2022. developed ❤️ by <a href="https://github.com/waelalhassan" target="_blank">Wael Alhassan</a></p>
         </div>
     </div>
