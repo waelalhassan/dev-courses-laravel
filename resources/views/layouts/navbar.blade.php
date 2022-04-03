@@ -2,7 +2,7 @@
     <div class="container">
         <div class="nav-wrapper d-flex d-justify-between d-align-center">
             <div class="brand-name">
-                <a href="/">DEV COURSES</a>
+                <a href="/">{{setting('site.title')}}</a>
             </div>
             <button class="d-sm-grid nav-btn-mobile" type="button">
                 <span></span>

@@ -3,7 +3,7 @@
         <div class="wrapper d-grid">
             <div class="col-4 site-info">
                 <h3>About us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint possimus aspernatur harum nihil! Dolore, odio!</p>
+                <p>{{setting('site.description')}}</p>
             </div>
             <div class="col-4 footer-nav">
                 <h3>footer nav 1</h3>

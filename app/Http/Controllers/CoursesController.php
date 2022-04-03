@@ -16,17 +16,12 @@ class CoursesController extends Controller
     }
 
     public function show (Course $id) {
-        $converter = new CommonMarkConverter([
-            'html_input' => 'strip',
-            'allow_unsafe_links' => false,
-        ]);
+        // $converter = new CommonMarkConverter([
+        //     'html_input' => 'strip',
+        //     'allow_unsafe_links' => false,
+        // ]);
 
-        $course = [
-            "buy_link" => $id->buy_link,
-            "image" => $id->image,
-            "title" => $id->title,
-            "body" => $converter->convert($id->body),
-        ];
+        $course = $id;
 
         return view("course.show", compact("course"));
     }
