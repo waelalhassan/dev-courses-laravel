@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import "classes.css";
 
 $mainColor: #eb4034;
 $color1: #ed5f55;
@@ -7,16 +6,13 @@ $color2: #f08078;
 $color3: #ed9993;
 $borderColor: #cfcfcf;
 
-body {
-    font-family: 'Poppins', sans-serif;
+html {
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
 }
 
-.hide-this {
-    opacity: 0;
-    transition: all .5s linear;
-}
-.hide-this.show-this {
-    opacity: 1;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -44,12 +40,15 @@ nav {
             }
         }
         .navbar {
-            list-style-type: none;
-            li {
-                a {
-                    padding: 10px;
-                    color: #FFF;
-                    font-size: 1.2rem;
+            ul {
+                display: flex;
+                list-style-type: none;
+                li {
+                    a {
+                        padding: 10px;
+                        color: #FFF;
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
@@ -119,7 +118,6 @@ nav {
 .sec-1 {
     padding: 50px 0;
     .wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(585px, 1fr));
         h2 {
             display: inline-block;
             border-bottom: 3px solid $mainColor;
@@ -187,6 +185,7 @@ nav {
                 border: 1px solid $mainColor;
                 padding: 5px 15px;
                 color: $mainColor;
+                transition: all .3s ease;
                 &:hover, &.active {
                     background-color: $mainColor ;
                     color: #FFF;
@@ -195,9 +194,9 @@ nav {
         }
     }
     .wrapper {
-        gap: 30px;
+        gap: 35px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
         .sec-3-card {
             width: 370px;
@@ -368,5 +367,4 @@ footer {
         }
     }
 }
-
 

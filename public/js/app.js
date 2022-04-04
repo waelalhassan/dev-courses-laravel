@@ -45,7 +45,7 @@ window.addEventListener("scroll", function () {
 if (header_btn_action) {
   header_btn_action.addEventListener("click", function () {
     scrollTo({
-      top: document.querySelector("#sec_3").getBoundingClientRect().top - 100,
+      top: document.querySelector("#courses").getBoundingClientRect().top - 100,
       left: 0,
       behavior: "smooth"
     });
@@ -73,7 +73,9 @@ _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MOD
 
             if (courses_parent) if (data.length > 0) {
               courses_parent.innerHTML = cache;
+              courses_parent.style.justifyContent = "";
             } else {
+              courses_parent.style.justifyContent = "center";
               courses_parent.innerHTML = "<h2> No Courses </h2>";
             }
           };
@@ -154,23 +156,16 @@ function max_number_letters(string) {
  * create animations & transitions
  *
  */
-
-
-var titles = document.querySelectorAll(".hide-this");
-var obs = new IntersectionObserver(function (a) {
-  a.forEach(function (e) {
-    if (e.isIntersecting) {
-      e.target.classList.add("show-this");
-      obs.unobserve(e.target);
-    }
-  });
-}, {
-  threshold: 1,
-  rootMargin: "20px"
-});
-titles.forEach(function (e) {
-  return obs.observe(e);
-});
+// const titles = document.querySelectorAll(".hide-this");
+// const obs = new IntersectionObserver((a) => {
+//     a.forEach(e => {
+//         if (e.isIntersecting) {
+//             e.target.classList.add("show-this")
+//             obs.unobserve(e.target)
+//         }
+//     })
+// }, {threshold: 1, rootMargin: "20px"})
+// titles.forEach(e => obs.observe(e))
 
 /***/ }),
 

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
+    <link rel="stylesheet" href="{{asset("css/classes.css")}}">
 </head>
 <body>
     @include("layouts.navbar")
@@ -13,7 +14,7 @@
 
     <section class="sec-1">
         <div class="container">
-            <div class="hide-this wrapper d-grid">
+            <div class="d-flex d-align-center wrapper">
                 <div>
                     <h2>{{setting('site.sec_1_title')}}</h2>
                     {!! setting('site.sec_1_desc') !!}
@@ -48,7 +49,7 @@
         </div>
     </section>
 
-    <section class="sec-3" id="sec_3">
+    <section class="sec-3" id="courses">
         <div class="container">
             <div class="sec-3-header d-sm-flex-column d-flex d-justify-between d-align-center">
                 <h2 class="hide-this">{{setting('site.sec_3_title')}}</h2>

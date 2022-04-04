@@ -2,16 +2,15 @@
     <div class="container">
         <div class="hide-this wrapper d-grid">
             <div class="col-4 site-info">
-                <h3>About us</h3>
+                <h3>{{setting('site.col_1_name_f')}}</h3>
                 <p>{{setting('site.description')}}</p>
             </div>
             <div class="col-4 footer-nav">
-
-                <h3>footer nav 1</h3>
+                <h3>{{setting('site.col_2_name_f')}}</h3>
                 {{ menu('footer_center_menu')}}
             </div>
             <div class="col-4 footer-nav">
-                <h3>footer nav 2</h3>
+                <h3>{{setting('site.col_3_name_f')}}</h3>
                 {{ menu('footer_right_menu')}}
             </div>
         </div>

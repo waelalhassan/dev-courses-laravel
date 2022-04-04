@@ -19,7 +19,7 @@ if (header_btn_action) {
     header_btn_action.addEventListener("click", () => {
         scrollTo({
             top:
-                document.querySelector("#sec_3").getBoundingClientRect().top -
+                document.querySelector("#courses").getBoundingClientRect().top -
                 100,
             left: 0,
             behavior: "smooth",
@@ -107,7 +107,9 @@ if (header_btn_action) {
         if (courses_parent)
         if (data.length > 0) {
             courses_parent.innerHTML = cache;
+            courses_parent.style.justifyContent = "";
         } else {
+            courses_parent.style.justifyContent = "center";
             courses_parent.innerHTML = `<h2> No Courses </h2>`;
         }
     }
@@ -123,13 +125,13 @@ function max_number_letters(string) {
  *
  */
 
-const titles = document.querySelectorAll(".hide-this");
-const obs = new IntersectionObserver((a) => {
-    a.forEach(e => {
-        if (e.isIntersecting) {
-            e.target.classList.add("show-this")
-            obs.unobserve(e.target)
-        }
-    })
-}, {threshold: 1, rootMargin: "20px"})
-titles.forEach(e => obs.observe(e))
+// const titles = document.querySelectorAll(".hide-this");
+// const obs = new IntersectionObserver((a) => {
+//     a.forEach(e => {
+//         if (e.isIntersecting) {
+//             e.target.classList.add("show-this")
+//             obs.unobserve(e.target)
+//         }
+//     })
+// }, {threshold: 1, rootMargin: "20px"})
+// titles.forEach(e => obs.observe(e))

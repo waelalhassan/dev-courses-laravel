@@ -9,12 +9,9 @@
                 <span></span>
                 <span></span>
             </button>
-            <ul class="navbar d-sm-none d-flex">
-                <li><a href="#">link 1</a></li>
-                <li><a href="#">link 2</a></li>
-                <li><a href="#">link 3</a></li>
-                <li><a href="#">link 4</a></li>
-            </ul>
+            <div class="navbar d-sm-none">
+                {{ menu('site_main_menu') }}
+            </div>
         </div>
     </div>
 </nav>
