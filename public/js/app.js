@@ -171,18 +171,6 @@ var obs = new IntersectionObserver(function (a) {
 titles.forEach(function (e) {
   return obs.observe(e);
 });
-/**
- *
- * text effect
- *
- */
-// const text_effect = document.querySelector("#text_effect");
-// const test_length = text_effect.textContent.length
-// let incre_num = 0;
-// setInterval(() => {
-//     incre_num++
-//     console.log(incre_num)
-// }, 500)
 
 /***/ }),
 
