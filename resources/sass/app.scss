@@ -5,6 +5,7 @@ $color1: #ed5f55;
 $color2: #f08078;
 $color3: #ed9993;
 $borderColor: #cfcfcf;
+$blackColor: #333333;
 
 html {
     scroll-behavior: smooth;
@@ -132,7 +133,6 @@ nav {
     height: 87px;
 }
 
-
 .sec-1 {
     padding: 50px 0;
     .wrapper {
@@ -154,7 +154,7 @@ nav {
 
 .sec-2 {
     padding: 50px 0;
-    background-color: $mainColor;
+    background-color: $blackColor;
     h2 {
         color: #FFF;
         margin-bottom: 20px;
@@ -341,10 +341,9 @@ nav {
     }
 }
 
-
 footer {
     padding: 50px 0 0 0;
-    background-color: #1a1a1a;
+    background-color: $blackColor;
     color: #FFF;
     .wrapper {
         margin: 0 0 40px 0;
@@ -366,8 +365,23 @@ footer {
                 list-style-type: none;
                 li {
                     a {
-                        color: $mainColor;
+                        color: $borderColor;
                         display: inline-block;
+                        transition: all .3s linear;
+                        &::after {
+                            content: "";
+                            display: block;
+                            background-color: $mainColor;
+                            width: 0;
+                            height: 2px;
+                            transition: all .3s linear;
+                        }
+                        &:hover {
+                            color: #FFF;
+                            &::after {
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }

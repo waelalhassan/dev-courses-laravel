@@ -160,7 +160,7 @@ nav.fixed .navbar li a {
 
 .sec-2 {
   padding: 50px 0;
-  background-color: #eb4034;
+  background-color: #333333;
 }
 .sec-2 h2 {
   color: #FFF;
@@ -331,7 +331,7 @@ nav.fixed .navbar li a {
 
 footer {
   padding: 50px 0 0 0;
-  background-color: #1a1a1a;
+  background-color: #333333;
   color: #FFF;
 }
 footer .wrapper {
@@ -353,8 +353,23 @@ footer .wrapper .footer-nav ul {
   list-style-type: none;
 }
 footer .wrapper .footer-nav ul li a {
-  color: #eb4034;
+  color: #cfcfcf;
   display: inline-block;
+  transition: all 0.3s linear;
+}
+footer .wrapper .footer-nav ul li a::after {
+  content: "";
+  display: block;
+  background-color: #eb4034;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s linear;
+}
+footer .wrapper .footer-nav ul li a:hover {
+  color: #FFF;
+}
+footer .wrapper .footer-nav ul li a:hover::after {
+  width: 100%;
 }
 footer .copyright {
   border-top: 1px solid #3a3a3a;
