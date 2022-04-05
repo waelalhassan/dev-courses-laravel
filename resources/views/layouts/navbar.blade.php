@@ -9,7 +9,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <div class="navbar d-sm-none">
+            <div class="navbar">
                 {{ menu('site_main_menu') }}
             </div>
         </div>

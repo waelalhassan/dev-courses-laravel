@@ -149,7 +149,9 @@ _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MOD
 }))();
 
 function max_number_letters(string) {
-  return string.substr(0, 120) + "...";
+  // const toArr = string.trim().split(" ")
+  // const limit = toArr.slice(0, 5).join(" ")
+  return string.trim().substr(0, 110) + "...";
 }
 /**
  *
