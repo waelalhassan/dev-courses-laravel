@@ -20,6 +20,7 @@ nav .nav-wrapper .brand-name a {
   font-weight: bold;
   font-size: 1.3rem;
   color: #FFF;
+  text-shadow: 2px 2px 2px #eb4034;
 }
 nav .nav-wrapper .nav-btn-mobile {
   background-color: transparent;
@@ -38,6 +39,7 @@ nav .nav-wrapper .navbar ul {
   list-style-type: none;
 }
 nav .nav-wrapper .navbar ul li a {
+  text-shadow: 2px 2px 2px #eb4034;
   padding: 10px;
   color: #FFF;
   font-size: 1.2rem;
@@ -123,6 +125,22 @@ nav.fixed .navbar li a {
     transform: translateY(10px);
   }
 }
+.curve-s1 {
+  height: 100px;
+}
+
+.curve-s2 {
+  height: 201px;
+}
+
+.curve-s3 {
+  height: 151px;
+}
+
+.curve-s4 {
+  height: 87px;
+}
+
 .sec-1 {
   padding: 50px 0;
 }

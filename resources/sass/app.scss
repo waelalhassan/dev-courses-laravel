@@ -25,6 +25,7 @@ nav {
                 font-weight: bold;
                 font-size: 1.3rem;
                 color: #FFF;
+                text-shadow: 2px 2px 2px $mainColor;
             }
         }
         .nav-btn-mobile {
@@ -45,6 +46,7 @@ nav {
                 list-style-type: none;
                 li {
                     a {
+                        text-shadow: 2px 2px 2px $mainColor;
                         padding: 10px;
                         color: #FFF;
                         font-size: 1.2rem;
@@ -114,6 +116,22 @@ nav {
     from {transform: translateY(-10px);}
     to {transform: translateY(10px);}
 }
+
+.curve-s1 {
+    height: 100px;
+}
+
+.curve-s2 {
+    height: 201px;
+}
+.curve-s3 {
+    height: 151px;
+}
+
+.curve-s4 {
+    height: 87px;
+}
+
 
 .sec-1 {
     padding: 50px 0;
