@@ -62,7 +62,7 @@
                 <ul class="filter d-flex" id="categories_parent">
                 </ul>
             </div>
-            <div class="wrapper" id="courses_parent">
+            <div class="d-flex d-sm-justify-center d-justify-start wrapper" id="courses_parent">
             </div>
         </div>
     </section>

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <title>{{ $course['title'] }}</title>
     <link rel="stylesheet" href="{{asset("css/classes.css")}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
@@ -16,11 +15,11 @@
 
     <section class="single-course">
         <div class="container">
-            <div class="hide-this wrapper-single-course">
+            <div class="parent-single-course">
                 <header class="text-center">
                     <h1>{{ $course['title'] }}</h1>
                 </header>
-                <div class="d-flex">
+                <div class="d-flex d-sm-flex-column d-flex-row wrapper-single-course">
                     <div class="single-course-info">
                         <img src="{{ asset('storage/' . $course['image']) }}"
                             alt="{{ asset('storage/' . $course['title']) }}">
@@ -29,7 +28,7 @@
                             <span>Buy now</span>
                         </a>
                     </div>
-                    <div class="single-course-details">
+                    <div class="p-sm-t-2 p-sm-l-0 single-course-details">
                         {!! $course['body'] !!}
                     </div>
                 </div>
